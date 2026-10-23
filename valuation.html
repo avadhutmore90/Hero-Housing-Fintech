@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Property Valuation | Hero Housing Fintech</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-icon">H</span><span>HERO HOUSING<small>FINTECH INNOVATION</small></span></a><nav class="nav"><a href="index.html">Home</a><a href="solutions.html">Solutions</a><a class="active" href="valuation.html">Property Valuation</a><a href="underwriting.html">Loan Assessment</a><a href="challenge.html">Challenge &amp; Prizes</a></nav></header>
+<main class="container page">
+<a class="back-link" href="index.html">← Back to Home</a><span class="eyebrow dark-eyebrow">INTERACTIVE DEMO</span><h1>Property Valuation Calculator</h1><p class="lead">Enter sample property details to calculate an illustrative estimate.</p>
+<div class="calculator-layout">
+<form class="form-card" id="valuationForm">
+<label for="city">City / market</label><select id="city"><option value="1">Pune</option><option value=".88">Nashik</option><option value=".78">Sangli</option><option value="1.18">Mumbai</option><option value=".92">Nagpur</option></select>
+<label for="propertyType">Property type</label><select id="propertyType"><option value="1">Residential</option><option value="1.22">Commercial</option></select>
+<label for="area">Built-up area (sq. ft.)</label><input id="area" type="number" min="100" max="50000" value="1000" required>
+<label for="age">Property age</label><select id="age"><option value="1">0–5 years</option><option value=".94">6–15 years</option><option value=".84">16–30 years</option><option value=".72">30+ years</option></select>
+<label for="condition">Property condition</label><select id="condition"><option value="1.05">Excellent</option><option value="1" selected>Good</option><option value=".88">Needs repair</option></select>
+<button class="button full" type="submit">Calculate Estimate →</button>
+</form>
+<section class="result-card"><span class="eyebrow dark-eyebrow">SAMPLE RESULT</span><p class="muted">Illustrative estimated market value</p><div class="big-value" id="valuationResult">₹68,50,000</div><p id="rateResult" class="muted">Approx. ₹6,850 per sq. ft.</p><hr><h3>Factors used</h3><div class="result-row"><span>Location</span><strong id="cityFactor">Pune · 1.00×</strong></div><div class="result-row"><span>Property type</span><strong id="typeFactor">Residential · 1.00×</strong></div><div class="result-row"><span>Age and condition</span><strong id="ageFactor">1.00×</strong></div><div class="notice">This is a simple illustrative formula, not a trained AI model or real market appraisal. It does not use live transaction data. Do not use it for lending or financial decisions.</div></section>
+</div></main><footer><div class="container footer-inner"><span>HERO HOUSING FINTECH · CONCEPT WEBSITE</span><a href="index.html">Return to Home ↑</a></div></footer></body></html>
